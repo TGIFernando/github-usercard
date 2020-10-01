@@ -1,16 +1,21 @@
 /*
   STEP 1: using axios, send a GET request to the following URL
     (replacing the placeholder with your Github name):
-    https://api.github.com/users/<your name>
+    https://api.github.com/users/TGIFernando
 */
+axios.get('https://api.github.com/users/TGIFernando')
+    .then(res => {
+        debugger
+    }).catch(err => {
+        debugger
+    })
+    /*
+      STEP 2: Inspect and study the data coming back, this is YOUR
+        github info! You will need to understand the structure of this
+        data in order to use it to build your component function
 
-/*
-  STEP 2: Inspect and study the data coming back, this is YOUR
-    github info! You will need to understand the structure of this
-    data in order to use it to build your component function
-
-    Skip to STEP 3.
-*/
+        Skip to STEP 3.
+    */
 
 /*
   STEP 4: Pass the data received from Github into your function,
